@@ -1,0 +1,127 @@
+@import "https://fonts.googleapis.com/css?family=Source+Sans+Pro";
+@import "https://fonts.googleapis.com/css?family=Crimson+Text";
+@import "https://fonts.googleapis.com/css?family=Baloo+Paaji";
+@import "https://fonts.googleapis.com/css?family=Bitter";
+@import "https://fonts.googleapis.com/css?family=Oswald";
+@import "https://fonts.googleapis.com/css?family=Poiret+One";
+@import "https://fonts.googleapis.com/css?family=Merriweather";
+@import "https://fonts.googleapis.com/css?family=Lato";
+@import "https://fonts.googleapis.com/css?family=Fascinate+Inline";
+@import "https://fonts.googleapis.com/css?family=VT323";
+@import "https://fonts.googleapis.com/css?family=Share+Tech+Mono";
+@import "https://fonts.googleapis.com/css?family=Lobster";
+@import "https://fonts.googleapis.com/css?family=Josefin+Sans|Poppins";
+@import "https://fonts.googleapis.com/css?family=BioRhyme+Expanded|Fauna+One|Ultra";
+@import "https://fonts.googleapis.com/css?family=Amatic+SC";
+@import "https://fonts.googleapis.com/css?family=Tillana";
+@import "https://fonts.googleapis.com/css?family=Aldrich";
+h1, h2, h3, h4 {
+  margin: 0px;
+  padding: 0px; }
+
+button {
+  outline: none; }
+
+.primaryColor {
+  color: #717AEF; }
+
+.grey3 {
+  color: #D9D9D9; }
+
+li {
+  list-style: none; }
+
+.App {
+  text-align: center;
+  font-family: 'Source Sans Pro', sans-serif; }
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px; }
+
+.App-header {
+  background-color: white;
+  height: 64px;
+  color: rgba(0, 0, 0, 0.54);
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: rgba(0, 0, 0, 0.14); }
+  .App-header .links {
+    float: right;
+    padding-top: 20px; }
+  .App-header .LogoCase > div {
+    vertical-align: middle; }
+  .App-header .actionIcons {
+    float: right;
+    padding-top: 8px; }
+    .App-header .actionIcons button {
+      margin: 12px;
+      border: none;
+      background-color: transparent; }
+    .App-header .actionIcons i {
+      width: 24px;
+      height: 24px; }
+  .App-header ul {
+    margin: 0px;
+    padding: 0px; }
+  .App-header ul li {
+    display: inline-block;
+    font-size: 14px;
+    margin-left: 34px;
+    font-weight: 600; }
+  .App-header .LogoCase {
+    padding-top: 20px;
+    float: left;
+    opacity: 0.54;
+    margin-left: 40px; }
+  .App-header .logo {
+    background-image: url("./daniel.svg");
+    width: 74px;
+    height: 24px;
+    -webkit-background-size: 74px 24px;
+    background-size: 74px 24px; }
+  .App-header .headerElement {
+    display: inline-block; }
+
+.listContainer {
+  width: calc(33% - 41px);
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: black;
+  display: inline-block;
+  box-sizing: border-box;
+  float: left;
+  flex: 1;
+  min-height: 360px; }
+  .listContainer .listHeader {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between; }
+  .listContainer .listBody {
+    display: flex; }
+  .listContainer .listText {
+    text-align: left; }
+  .listContainer .listSentence {
+    font-size: 40px;
+    text-align: left; }
+  .listContainer .listInfo {
+    display: inline-block; }
+  .listContainer .listAddBtn {
+    background-color: transparent;
+    border: none;
+    display: inline-block; }
+
+.testFont {
+  font-family: 'Baloo Paaji', cursive; }
+
+.App-intro {
+  font-size: large; }
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+
+/*# sourceMappingURL=output.css.map */

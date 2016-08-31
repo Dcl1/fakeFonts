@@ -1,0 +1,97 @@
+{
+	"fonts" : [
+		{
+			"style" : "Sans Serif" ,
+			"title" : "Source Sans Pro",
+			"info" : "Paul D. Hunt"
+		},
+		{
+			"style" : "Serif" ,
+			"title" : "Crimson Text",
+			"info" : "Sebastian Kosch" 
+		},
+		{
+			"style" : "Serif",
+			"title" : "Bitter",
+			"info" : "Huerta Tipográfica" 
+		},
+		{
+			"style" : "Sans Serif",
+			"title" : "Oswald",
+			"info" : "Vernon Adams"
+		},
+		{
+			"style" : "Handwriting",
+			"title" : "'Poiret One",
+			"info" : "Denis Masharov"
+		},
+		{
+			"style" : "Serif",
+			"title" : "Merriweather",
+			"info" : "Sorkin Type" 
+		},
+		{
+			"style" : "Sans Serif",
+			"title" : "Lato",
+			"info" : "Łukasz Dziedzic"
+		},
+		{
+			"style" : "Display",
+			"title" : "Fascinate Inline",
+			"info" : "Astigmatic"
+		},
+		{
+			"style" : "Monospace",
+			"title" : "VT323",
+			"info" : "Carrois Apostrophe" 
+		},
+		{
+			"style" : "Monospace",
+			"title" : "Share Tech Mono",
+			"info" : "Carrois Apostrophe"
+		},
+		{
+			"style" : "Display",
+			"title" : "Lobster",
+			"info" : "Impallari Type"
+		},
+		{
+			"style" : "Serif",
+			"title" : "BioRhyme Expanded",
+			"info" : "Aoife Mooney" 
+		},
+		{
+			"style" : "Serif",
+			"title" : "Ultra",
+			"info" : "Astigmatic"
+		},
+		{
+			"style" : "Serif",
+			"title" : "Fauna One",
+			"info" : "Eduardo Tunni"
+		},
+
+
+		{
+			"style" : "Handwriting",
+			"title" : "Amatic SC",
+			"info" : "Vernon Adams" 
+		},
+		{
+			"style" : "Display",
+			"title" : "Tillana",
+			"info" : "Indian Type Foundry"
+		},
+		{
+			"style" : "Sans Serif",
+			"title" : "Aldrich",
+			"info" : "MADType"
+		}
+	]
+}
+
+
+
+
+
+
