@@ -11,6 +11,7 @@ h1, h2, h3, h4 {
 
 button {
   outline: none;
+  cursor: pointer;
 }
 
 .primaryColor {
@@ -36,6 +37,10 @@ li {
   height: 80px;
 }
 
+.MainArea {
+  margin-top: 100px;
+}
+
 .App-header {
   background-color: white;
   height: 64px;
@@ -43,6 +48,10 @@ li {
   border-bottom-style: solid;
   border-bottom-width: 1px;
   border-bottom-color: rgba(0,0,0,0.14);
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
 
   .links {
     float: right;
@@ -148,9 +157,40 @@ li {
     background-color: transparent;
     border: none;
     display: inline-block;
+    cursor: pointer;
   }
 
 }
+
+.primaryOpen {
+  width: 100%;
+  padding-right: 296px;
+  box-sizing: border-box;
+}
+
+.secondaryOpen {
+  position: fixed;
+  z-index: 80;
+  top:0px;
+  right:0px;
+  width: 280px;
+  height: 100%;
+  background-color: white;
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-left-color: rgba(0, 0 ,0, 0.14);
+}
+
+
+.rightMenuContainer{
+    width: 200;
+    height: 100%;
+}
+
+
+
+
+
 
 .testFont {
   font-family: 'Baloo Paaji', cursive;

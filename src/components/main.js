@@ -24,7 +24,7 @@ class Main extends Component {
 			var marg = 40;
 
 			
-			if(i % 3 == 2) {
+			if(i % 3 === 2) {
 				marg = 0
 			} else {
 				marg = 40

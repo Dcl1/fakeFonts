@@ -1,8 +1,27 @@
 import React, { Component } from 'react';
-import '../App.css';
+import '../output.css';
 
 
 class HeaderBar extends Component {
+
+	constructor(props){
+		super(props);
+
+		this.state = {
+			toggled: false
+		}
+	}
+
+	toggleButton(){
+
+		var newState = this.state.toggled ? false : true;
+
+		this.setState({
+			toggled: newState
+		});
+	}
+
+
 	render() {
 		return (
 			<div className="App-header" >
@@ -19,8 +38,8 @@ class HeaderBar extends Component {
 					<button type="button">
 						<i className="material-icons headerElement"> format_color_fill </i>
 					</button>
-					<button type="button">
-						<i className="material-icons">search</i>
+					<button type="button" onClick={this.toggleButton.bind(this)} >
+						{this.state.toggled ? <i className="material-icons">chevron_right</i> : <i className="material-icons">search</i> }
 					</button>
 				</div>
 
