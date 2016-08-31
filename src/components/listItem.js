@@ -5,13 +5,14 @@ import '../output.css';
 
 class Listitem extends Component {
 
-	getInitialState() {
+	constructor(props){
 
-		return {
+		super(props);
+
+		this.state = {
 			chosenFont: '',
 			toggled: false
 		};
-
 	}
 
 	componentWillMount() {

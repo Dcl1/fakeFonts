@@ -62,6 +62,14 @@ li {
       vertical-align: middle;
   }
 
+  .actionsOpen {
+    transform:translateX(-280px)
+  }
+
+  .actionsClosed {
+    transform:translateX(10px)
+  }
+
   .actionIcons {
     float: right;
     padding-top: 8px;
@@ -76,6 +84,9 @@ li {
       width: 24px;
       height: 24px;
     }
+
+
+
   }
 
   ul {
@@ -126,7 +137,7 @@ li {
   box-sizing: border-box;
   float: left;
   flex: 1;
-  min-height: 360px;
+  min-height: 460px;
 
 
   .listHeader {

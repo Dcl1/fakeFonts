@@ -59,6 +59,10 @@ li {
     padding-top: 20px; }
   .App-header .LogoCase > div {
     vertical-align: middle; }
+  .App-header .actionsOpen {
+    transform: translateX(-280px); }
+  .App-header .actionsClosed {
+    transform: translateX(10px); }
   .App-header .actionIcons {
     float: right;
     padding-top: 8px; }
@@ -100,7 +104,7 @@ li {
   box-sizing: border-box;
   float: left;
   flex: 1;
-  min-height: 360px; }
+  min-height: 460px; }
   .listContainer .listHeader {
     margin-top: 10px;
     margin-bottom: 10px;

@@ -8,11 +8,15 @@ import Sentences from '../data/sentences.json';
 
 class Main extends Component {
 
-	getInitialState() {
-		return {
+
+	constructor(props){
+		super(props);
+
+		this.state = {
 			fontArray : []
 		}
 	}
+
 
 	componentWillMount() {
 

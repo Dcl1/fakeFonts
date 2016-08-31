@@ -21,7 +21,6 @@ class HeaderBar extends Component {
 		});
 	}
 
-
 	render() {
 		return (
 			<div className="App-header" >
@@ -33,24 +32,24 @@ class HeaderBar extends Component {
 					</div>
 				</div>
 
+				<div className={this.props.isOpen ? "actionsOpen" : "actionsClosed"} >
+					<div className="actionIcons headerElement">
+						<button type="button">
+							<i className="material-icons headerElement"> format_color_fill </i>
+						</button>
+						<button type="button" onClick={this.toggleButton.bind(this)} >
+							{this.state.toggled ? <i className="material-icons">chevron_right</i> : <i className="material-icons">search</i> }
+						</button>
+					</div>
 
-				<div className="actionIcons headerElement">
-					<button type="button">
-						<i className="material-icons headerElement"> format_color_fill </i>
-					</button>
-					<button type="button" onClick={this.toggleButton.bind(this)} >
-						{this.state.toggled ? <i className="material-icons">chevron_right</i> : <i className="material-icons">search</i> }
-					</button>
+					<div className="links headerElement">
+						<ul>
+							<li> DIRECTORY </li>
+							<li> FEATURED </li>
+							<li> ABOUT </li>
+						</ul>
+					</div>
 				</div>
-
-				<div className="links headerElement">
-					<ul>
-						<li> DIRECTORY </li>
-						<li> FEATURED </li>
-						<li> ABOUT </li>
-					</ul>
-				</div>
-
 
 			</div>
 		);
@@ -59,3 +58,9 @@ class HeaderBar extends Component {
 
 
 export default HeaderBar;
+
+
+
+
+
+

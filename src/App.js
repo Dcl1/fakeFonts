@@ -20,7 +20,7 @@ class App extends Component {
     return (
       <div className="App">
       	<div className={this.state.toggled ? "primaryOpen" : "primaryClosed"}>
-        	<HeaderBar />
+        	<HeaderBar isOpen={true} />
         	<Main />
         </div>
         <div className={this.state.toggled ? "secondaryOpen" : "secondaryClosed"}>  
