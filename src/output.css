@@ -125,6 +125,14 @@ li {
     display: inline-block;
     cursor: pointer; }
 
+.listActionBar .left {
+  text-align: left; }
+.listActionBar .actionBarSeg {
+  display: inline-block;
+  width: 33%; }
+  .listActionBar .actionBarSeg .actionBarItem {
+    display: inline-block; }
+
 .primaryOpen {
   width: 100%;
   padding-right: 296px;

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import '../output.css';
 
-
+import ListActionBar from './listActionBar.js';
 
 class Listitem extends Component {
 
@@ -56,7 +56,9 @@ class Listitem extends Component {
 						{this.state.toggled ? <i className="material-icons grey3">remove_circle_outline</i> : <i className="material-icons primaryColor">add_circle</i> }
 					</button>
 				</div>
-
+				<div>
+					<ListActionBar />
+				</div>
 				<div className="listBody">
 					<p className="listSentence" style={this.callFamily()}>
 						{this.props.sentence}

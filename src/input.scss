@@ -170,8 +170,38 @@ li {
     display: inline-block;
     cursor: pointer;
   }
+}
+
+
+.listActionBar {
+
+
+    .left{
+      text-align: left;
+    }
+
+    .center {
+
+    }
+
+
+    .actionBarSeg{
+
+      display: inline-block;
+      width: 33%;
+
+
+
+
+      .actionBarItem {
+        display: inline-block;
+      }
+
+    }
+
 
 }
+
 
 .primaryOpen {
   width: 100%;
