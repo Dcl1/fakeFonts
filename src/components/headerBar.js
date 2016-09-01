@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import '../output.css';
-import { Router, Route, IndexRoute, Link, hashHistory } from 'react-router'
+import { Link } from 'react-router'
 
 
 class HeaderBar extends Component {
@@ -20,6 +20,8 @@ class HeaderBar extends Component {
 		this.setState({
 			toggled: newState
 		});
+
+		this.props.toggleClick();
 	}
 
 	render() {
