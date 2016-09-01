@@ -16,13 +16,18 @@ class App extends Component {
   	}
   }
 
+  componentWillReceiveProps(nextProps){
+    console.log("Inside App.js " + nextProps.isOpen);
+  }
+
+
   render() {
     return (
       <div className="App">
-      	<div className={this.state.toggled ? "primaryOpen" : "primaryClosed"}>
+      	<div className={this.props.isOpen ? "primaryOpen" : "primaryClosed"}>
         	<Main />
         </div>
-        <div className={this.state.toggled ? "secondaryOpen" : "secondaryClosed"}>  
+        <div className={this.props.isOpen ? "secondaryOpen" : "secondaryClosed"}>  
         	<RightMenu />
         </div>
       </div>

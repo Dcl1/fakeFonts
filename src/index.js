@@ -1,12 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+//import App from './App';
 import Featured from './Featured';
 import './index.css';
 import { combineReducers } from 'redux';
 //import HeaderBar from './components/headerBar';
 
 import HeaderContainer from './containers/headerContainer';
+import HomeContainer from './containers/homeContainer';
 
 import { render } from 'react-dom';
 import { Provider } from 'react-redux';
@@ -24,7 +25,7 @@ ReactDOM.render(
  	<Provider store={store} >
 	 	<Router history={browserHistory}>
 	 		<Route path="/" component={HeaderContainer}  >
-	 			<IndexRoute component={App} />
+	 			<IndexRoute component={HomeContainer} />
 	 			<Route path="featured" component={Featured} />
 	 		</Route>
 	 	</Router>

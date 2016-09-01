@@ -9,7 +9,7 @@ class HeaderBar extends Component {
 		super(props);
 
 		this.state = {
-			toggled: true
+			toggled: false
 		}
 	}
 
