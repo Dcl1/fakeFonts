@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import '../output.css';
+import { Router, Route, IndexRoute, Link, hashHistory } from 'react-router'
 
 
 class HeaderBar extends Component {
@@ -8,7 +9,7 @@ class HeaderBar extends Component {
 		super(props);
 
 		this.state = {
-			toggled: false
+			toggled: true
 		}
 	}
 
@@ -44,8 +45,8 @@ class HeaderBar extends Component {
 
 					<div className="links headerElement">
 						<ul>
-							<li> DIRECTORY </li>
-							<li> FEATURED </li>
+							<li> <Link to='/' > DIRECTORY </Link> </li>
+							<li> <Link to='/featured' > FEATURED </Link> </li>
 							<li> ABOUT </li>
 						</ul>
 					</div>
