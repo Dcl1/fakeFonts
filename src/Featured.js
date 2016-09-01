@@ -6,7 +6,7 @@ class Featured extends Component {
 
 	render() {
 		return (
-			<div>
+			<div className="MainArea">
 				<h1>
 					Featured page
 				</h1>

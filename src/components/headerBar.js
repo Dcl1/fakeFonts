@@ -24,35 +24,41 @@ class HeaderBar extends Component {
 
 	render() {
 		return (
-			<div className="App-header" >
+			<div>
+				<div className="App-header" >
 
-				<div className="LogoCase headerElement">
-					<div className="logo headerElement" > </div>
-					<div className="headerElement">
-						<h2> Fonts </h2>
+					<div className="LogoCase headerElement">
+						<div className="logo headerElement" > </div>
+						<div className="headerElement">
+							<h2> Fonts </h2>
+						</div>
 					</div>
+
+					<div className={this.state.toggled ? "actionsOpen" : "actionsClosed"} >
+						<div className="actionIcons headerElement">
+							<button type="button">
+								<i className="material-icons headerElement"> format_color_fill </i>
+							</button>
+							<button type="button" onClick={this.toggleButton.bind(this)} >
+								{this.state.toggled ? <i className="material-icons">chevron_right</i> : <i className="material-icons">search</i> }
+							</button>
+						</div>
+
+						<div className="links headerElement">
+							<ul>
+								<li> <Link to='/' > DIRECTORY </Link> </li>
+								<li> <Link to='/featured' > FEATURED </Link> </li>
+								<li> ABOUT </li>
+							</ul>
+						</div>
+					</div>
+
 				</div>
 
-				<div className={this.props.isOpen ? "actionsOpen" : "actionsClosed"} >
-					<div className="actionIcons headerElement">
-						<button type="button">
-							<i className="material-icons headerElement"> format_color_fill </i>
-						</button>
-						<button type="button" onClick={this.toggleButton.bind(this)} >
-							{this.state.toggled ? <i className="material-icons">chevron_right</i> : <i className="material-icons">search</i> }
-						</button>
-					</div>
-
-					<div className="links headerElement">
-						<ul>
-							<li> <Link to='/' > DIRECTORY </Link> </li>
-							<li> <Link to='/featured' > FEATURED </Link> </li>
-							<li> ABOUT </li>
-						</ul>
-					</div>
-				</div>
-
-			</div>
+				<div>
+	        		{this.props.children}
+	      		</div>
+      		</div>
 		);
 	}
 }
