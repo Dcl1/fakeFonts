@@ -2,6 +2,22 @@ import React, { Component } from 'react';
 import '../output.css';
 
 class ListActionBar extends Component {
+
+	constructor(props){
+
+		super(props);
+
+		this.state = {
+			range: 0
+		}
+	}
+
+	showValue(val){
+		this.setState({
+			range: val
+		})
+	}
+
 	render() {
 		return (
 			<div className="listActionBar">
@@ -22,7 +38,9 @@ class ListActionBar extends Component {
 				</div>
 
 				<div className="actionBarSeg right">
-					<input type="range" name="pixels" min="0" max="100" />
+					<div className="actionBarItem"> 
+						<input type="range" name="pixels" min="0" max="50" onchange={this.showValue(this.value)} />
+					</div>
 				</div>
 			</div>
 		);
@@ -30,3 +48,15 @@ class ListActionBar extends Component {
 }
 
 export default ListActionBar;
+
+
+
+
+
+
+
+
+
+
+
+

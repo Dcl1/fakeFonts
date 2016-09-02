@@ -19,6 +19,9 @@ h1, h2, h3, h4 {
   margin: 0px;
   padding: 0px; }
 
+body {
+  font-family: 'Source Sans Pro', sans-serif; }
+
 button {
   outline: none;
   cursor: pointer; }
@@ -33,8 +36,7 @@ li {
   list-style: none; }
 
 .App {
-  text-align: center;
-  font-family: 'Source Sans Pro', sans-serif; }
+  text-align: center; }
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
@@ -44,6 +46,7 @@ li {
   margin-top: 100px; }
 
 .App-header {
+  font-family: 'Source Sans Pro', sans-serif;
   background-color: white;
   height: 64px;
   color: rgba(0, 0, 0, 0.54);
@@ -65,7 +68,8 @@ li {
     transform: translateX(10px); }
   .App-header .actionIcons {
     float: right;
-    padding-top: 8px; }
+    padding-top: 8px;
+    margin: 0px 40px 0px 20px; }
     .App-header .actionIcons button {
       margin: 12px;
       border: none;
@@ -112,6 +116,8 @@ li {
     justify-content: space-between; }
   .listContainer .listBody {
     display: flex; }
+    .listContainer .listBody p {
+      margin: 10px 0px; }
   .listContainer .listText {
     text-align: left; }
   .listContainer .listSentence {
@@ -125,13 +131,63 @@ li {
     display: inline-block;
     cursor: pointer; }
 
-.listActionBar .left {
-  text-align: left; }
-.listActionBar .actionBarSeg {
-  display: inline-block;
-  width: 33%; }
-  .listActionBar .actionBarSeg .actionBarItem {
-    display: inline-block; }
+.listActionBar {
+  padding: 10px 0px 10px 0px;
+  height: 24px;
+  opacity: 0; }
+  .listActionBar .left {
+    text-align: left; }
+  .listActionBar p {
+    padding: 0px;
+    margin: 0px; }
+  .listActionBar .center {
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-left-color: #717AEF;
+    border-right-color: #717AEF;
+    border-left-style: solid;
+    border-right-style: solid; }
+  .listActionBar .actionBarSeg {
+    display: inline-block;
+    width: 33%;
+    color: #717AEF; }
+    .listActionBar .actionBarSeg .large {
+      width: 70%; }
+    .listActionBar .actionBarSeg input[type=range] {
+      -webkit-appearance: none;
+      /* Hides the slider so that custom slider can be made */
+      max-width: 100px;
+      /* Specific width is required for Firefox. */
+      background: transparent;
+      /* Otherwise white in Chrome */ }
+    .listActionBar .actionBarSeg input[type=range]::-webkit-slider-runnable-track {
+      max-width: 100px;
+      height: 5px;
+      background: #ddd;
+      border: none;
+      border-radius: 3px; }
+    .listActionBar .actionBarSeg input[type=range]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      border: none;
+      height: 16px;
+      width: 16px;
+      border-radius: 50%;
+      background: #717AEF;
+      margin-top: -4px; }
+    .listActionBar .actionBarSeg input[type=range]::-ms-thumb {
+      border: none;
+      height: 16px;
+      width: 16px;
+      border-radius: 50%;
+      background: goldenrod; }
+    .listActionBar .actionBarSeg .small {
+      width: 30%; }
+    .listActionBar .actionBarSeg .actionBarItem {
+      display: inline-block;
+      vertical-align: text-top; }
+
+.listActionBar:hover {
+  opacity: 1; }
 
 .primaryOpen {
   width: 100%;
