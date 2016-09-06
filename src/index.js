@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 //import App from './App';
 import Featured from './Featured';
+import About from './About';
 import './index.css';
 import { combineReducers } from 'redux';
 //import HeaderBar from './components/headerBar';
@@ -14,7 +15,7 @@ import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import * as AppReducers from './reducers';
 
-import { IndexRoute, Router, Route, Link, browserHistory } from 'react-router';
+import { IndexRedirect ,IndexRoute, Router, Route, Link, browserHistory } from 'react-router';
 
 
 const reducer = combineReducers(AppReducers);
@@ -25,8 +26,10 @@ ReactDOM.render(
  	<Provider store={store} >
 	 	<Router history={browserHistory}>
 	 		<Route path="/" component={HeaderContainer}  >
-	 			<IndexRoute component={HomeContainer} />
+	 			<IndexRedirect to="/directory" />
+	 			<Route path="directory" component={HomeContainer} />
 	 			<Route path="featured" component={Featured} />
+	 			<Route path="about" component={About} />
 	 		</Route>
 	 	</Router>
  	</Provider>

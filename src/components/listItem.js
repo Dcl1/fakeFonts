@@ -53,7 +53,8 @@ class Listitem extends Component {
 						<h4 className="listText"> {this.props.fontInfo} </h4>
 					</div>
 					<button type="button" className="listAddBtn" onClick={this.toggleButton.bind(this)} >
-						{this.state.toggled ? <i className="material-icons grey3">remove_circle_outline</i> : <i className="material-icons primaryColor">add_circle</i> }
+						 <i className={ this.state.toggled ? "material-icons primaryColor spin180 addCircle" : "material-icons primaryColor addCircle" }  >add_circle</i>
+						 <i className={ this.state.toggled ? "material-icons removeOutline revealRemove" : "material-icons removeOutline" }>remove_circle_outline</i> 
 					</button>
 				</div>
 				<div>

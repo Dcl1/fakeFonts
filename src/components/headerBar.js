@@ -9,7 +9,8 @@ class HeaderBar extends Component {
 		super(props);
 
 		this.state = {
-			toggled: false
+			toggled: false,
+			selected: 'directory'
 		}
 	}
 
@@ -48,9 +49,9 @@ class HeaderBar extends Component {
 
 						<div className="links headerElement">
 							<ul>
-								<li> <Link to='/' > DIRECTORY </Link> </li>
-								<li> <Link to='/featured' > FEATURED </Link> </li>
-								<li> ABOUT </li>
+								<li> <Link activeClassName="active" to='/directory' > DIRECTORY </Link> </li>
+								<li> <Link activeClassName="active" to='/featured' > FEATURED </Link> </li>
+								<li> <Link activeClassName="active" to='/about' > ABOUT </Link> </li>
 							</ul>
 						</div>
 					</div>

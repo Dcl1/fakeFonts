@@ -56,10 +56,21 @@ li {
   position: fixed;
   top: 0px;
   left: 0px;
-  right: 0px; }
+  right: 0px;
+  z-index: 500; }
   .App-header .links {
     float: right;
     padding-top: 20px; }
+  .App-header a {
+    text-decoration: none;
+    color: black;
+    opacity: 0.54; }
+  .App-header link {
+    text-decoration: none;
+    color: black;
+    opacity: 0.54; }
+  .App-header .active {
+    color: #717AEF; }
   .App-header .LogoCase > div {
     vertical-align: middle; }
   .App-header .actionsOpen {
@@ -130,7 +141,49 @@ li {
     border: none;
     display: inline-block;
     cursor: pointer; }
+  .listContainer .spin180 {
+    animation-name: spinnerOut;
+    -webkit-animation-name: spinnerOut;
+    transform: rotate(0deg);
+    animation-duration: 0.6s;
+    -webkit-animation-duration: 0.6s;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards; }
+  .listContainer .addCircle {
+    position: relative;
+    z-index: 100;
+    right: -24px; }
+  .listContainer .removeOutline {
+    z-index: 50;
+    opacity: 0; }
+  .listContainer .revealRemove {
+    animation-name: revealremove;
+    -webkit-animation-name: revealremove;
+    animation-delay: 0.5s;
+    -webkit-animation-delay: 0.5s;
+    animation-duration: 0.3;
+    -webkit-animation-duration: 0.3;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards; }
 
+@keyframes spinnerOut {
+  0% {
+    transform: rotate(0deg);
+    transform: scale(1); }
+  20% {
+    transform: scale(1.4); }
+  60% {
+    transform: rotate(60deg);
+    opacity: 1; }
+  100% {
+    opacity: 0;
+    transform: rotate(60deg);
+    transform: scale(1.4); } }
+@keyframes revealremove {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 0.54; } }
 .listActionBar {
   padding: 10px 0px 10px 0px;
   height: 24px;
@@ -185,8 +238,12 @@ li {
     .listActionBar .actionBarSeg .actionBarItem {
       display: inline-block;
       vertical-align: text-top; }
+      .listActionBar .actionBarSeg .actionBarItem p {
+        vertical-align: middle; }
+      .listActionBar .actionBarSeg .actionBarItem i {
+        vertical-align: middle; }
 
-.listActionBar:hover {
+.listContainer:hover .listActionBar {
   opacity: 1; }
 
 .primaryOpen {
@@ -196,7 +253,7 @@ li {
 
 .secondaryOpen {
   position: fixed;
-  z-index: 80;
+  z-index: 500;
   top: 0px;
   right: 0px;
   width: 280px;
@@ -212,6 +269,47 @@ li {
 .rightMenuContainer {
   width: 200;
   height: 100%; }
+  .rightMenuContainer .filters h4 {
+    float: left;
+    margin-bottom: 16px; }
+  .rightMenuContainer .filters ul {
+    margin: 0px;
+    padding: 0px; }
+    .rightMenuContainer .filters ul li {
+      float: left;
+      width: 100%;
+      margin: 0px 16px 16px 0px; }
+      .rightMenuContainer .filters ul li i {
+        float: left;
+        vertical-align: top; }
+      .rightMenuContainer .filters ul li p {
+        display: inline-block;
+        float: left;
+        vertical-align: top;
+        margin: 0px 0px 0px 12px;
+        padding-top: 3px; }
+  .rightMenuContainer .main {
+    padding: 20px 20px 0px 24px; }
+  .rightMenuContainer .marg {
+    margin-left: 24px; }
+  .rightMenuContainer .searchBar {
+    height: 64px;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(0, 0, 0, 0.14);
+    border-width: 1px; }
+    .rightMenuContainer .searchBar .section {
+      vertical-align: middle;
+      display: inline-block;
+      float: left;
+      padding-top: 20px; }
+      .rightMenuContainer .searchBar .section .search-icon {
+        opacity: 0.54; }
+      .rightMenuContainer .searchBar .section .search-query {
+        align-self: stretch;
+        border-style: none;
+        font-size: 15px;
+        opacity: 0.24;
+        padding-left: 12px; }
 
 .testFont {
   font-family: 'Baloo Paaji', cursive; }
