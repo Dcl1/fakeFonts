@@ -111,7 +111,6 @@ li {
     display: inline-block; }
 
 .listContainer {
-  width: calc(33% - 41px);
   border-top-style: solid;
   border-top-width: 1px;
   border-top-color: black;
@@ -166,24 +165,6 @@ li {
     animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards; }
 
-@keyframes spinnerOut {
-  0% {
-    transform: rotate(0deg);
-    transform: scale(1); }
-  20% {
-    transform: scale(1.4); }
-  60% {
-    transform: rotate(60deg);
-    opacity: 1; }
-  100% {
-    opacity: 0;
-    transform: rotate(60deg);
-    transform: scale(1.4); } }
-@keyframes revealremove {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 0.54; } }
 .listActionBar {
   padding: 10px 0px 10px 0px;
   height: 24px;
@@ -368,5 +349,38 @@ li {
     transform: rotate(0deg); }
   to {
     transform: rotate(360deg); } }
+@media screen and (max-width: 650px) {
+  .listContainer {
+    width: calc(100% - 41px); }
+
+  .App-header button {
+    display: none; }
+  .App-header div.links {
+    display: none; } }
+@media screen and (min-width: 650px) {
+  .listContainer {
+    width: calc(50% - 41px); } }
+@media screen and (min-width: 1200px) {
+  .listContainer {
+    width: calc(33% - 41px); } }
+/* End of media queries */
+@keyframes spinnerOut {
+  0% {
+    transform: rotate(0deg);
+    transform: scale(1); }
+  20% {
+    transform: scale(1.4); }
+  60% {
+    transform: rotate(60deg);
+    opacity: 1; }
+  100% {
+    opacity: 0;
+    transform: rotate(60deg);
+    transform: scale(1.4); } }
+@keyframes revealremove {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 0.54; } }
 
 /*# sourceMappingURL=output.css.map */

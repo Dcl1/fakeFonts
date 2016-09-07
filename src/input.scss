@@ -2,6 +2,7 @@
 @import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro';
 
 
+
 $primary-color: #717AEF;
 $grey-three : #D9D9D9;
 
@@ -13,6 +14,10 @@ h1, h2, h3, h4 {
 body {
    font-family: 'Source Sans Pro', sans-serif; 
 }
+
+
+
+
 
 button {
   outline: none;
@@ -152,104 +157,96 @@ li {
  
 }
 
-
 .listContainer {
 
-  width: calc(33% - 41px);
-  border-top-style: solid;
-  border-top-width: 1px;
-  border-top-color: rgba(0,0,0,1);
-  display: inline-block;
-  box-sizing: border-box;
-  float: left;
-  flex: 1;
-  min-height: 420px;
+
+      border-top-style: solid;
+      border-top-width: 1px;
+      border-top-color: rgba(0,0,0,1);
+      display: inline-block;
+      box-sizing: border-box;
+      float: left;
+      flex: 1;
+      min-height: 420px;
 
 
-  .listHeader {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    display: flex;
-    justify-content: space-between;
-  }
+      .listHeader {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: space-between;
+      }
 
-  .listBody {
-    display: flex;
+      .listBody {
+        display: flex;
 
-    p{
-      margin: 10px 0px;
+        p{
+          margin: 10px 0px;
+        }
+
+      }
+
+      .listText {
+        text-align: left;
+      }
+
+      .listSentence {
+        font-size: 40px;
+        text-align: left;
+      }
+
+      .listInfo {
+        display: inline-block;
+      }
+
+      .listAddBtn {
+        background-color: transparent;
+        border: none;
+        display: inline-block;
+        cursor: pointer;
+      }
+
+
+      .spin180 {
+          animation-name: spinnerOut;
+          -webkit-animation-name: spinnerOut;
+          transform: rotate(0deg);
+          animation-duration: 0.6s;
+          -webkit-animation-duration: 0.6s;
+          animation-fill-mode: forwards;
+          -webkit-animation-fill-mode: forwards;
+      }
+
+      .addCircle {
+        position: relative;
+        z-index: 100;
+        right: -24px;
+      }
+
+      .removeOutline {
+        z-index: 50;
+        opacity: 0;
+      }
+
+      .revealRemove {
+          animation-name: revealremove;
+          -webkit-animation-name: revealremove;
+          animation-delay: 0.5s;
+          -webkit-animation-delay: 0.5s;
+          animation-duration: 0.3;
+          -webkit-animation-duration: 0.3;
+          animation-fill-mode: forwards;
+          -webkit-animation-fill-mode: forwards;
+      }
+
+
     }
 
-  }
-
-  .listText {
-    text-align: left;
-  }
-
-  .listSentence {
-    font-size: 40px;
-    text-align: left;
-  }
-
-  .listInfo {
-    display: inline-block;
-  }
-
-  .listAddBtn {
-    background-color: transparent;
-    border: none;
-    display: inline-block;
-    cursor: pointer;
-  }
 
 
-  .spin180 {
-      animation-name: spinnerOut;
-      -webkit-animation-name: spinnerOut;
-      transform: rotate(0deg);
-      animation-duration: 0.6s;
-      -webkit-animation-duration: 0.6s;
-      animation-fill-mode: forwards;
-      -webkit-animation-fill-mode: forwards;
-  }
-
-  .addCircle {
-    position: relative;
-    z-index: 100;
-    right: -24px;
-  }
-
-  .removeOutline {
-    z-index: 50;
-    opacity: 0;
-  }
-
-  .revealRemove {
-      animation-name: revealremove;
-      -webkit-animation-name: revealremove;
-      animation-delay: 0.5s;
-      -webkit-animation-delay: 0.5s;
-      animation-duration: 0.3;
-      -webkit-animation-duration: 0.3;
-      animation-fill-mode: forwards;
-      -webkit-animation-fill-mode: forwards;
-  }
 
 
-}
 
-
-@keyframes spinnerOut {
-  0% {transform: rotate(0deg); transform: scale(1);}
-  20%{transform: scale(1.4); }
-  60% {transform: rotate(60deg);  opacity: (1);}
-  100% { opacity: (0); transform: rotate(60deg); transform: scale(1.4);}
-}
-
-@keyframes revealremove {
-  0% { opacity: 0  };
-  100% { opacity: 0.54 };
-}
 
 
 
@@ -557,9 +554,57 @@ li {
 }
 
 
+@media screen and (max-width: 650px) {
+    .listContainer {
+      width: calc(100% - 41px);
+    }
+
+    .App-header {
+
+        button{
+          display: none;
+        }
+
+        div.links{
+          display: none;
+        }
+
+    }
+
+}
+
+@media screen and ( min-width: 650px) {
+
+    .listContainer{
+        width: calc(50% - 41px);
+    }
+
+
+}
+
+
+@media screen and (min-width: 1200px) {
+    
+    .listContainer{
+        width: calc(33% - 41px);
+    }
+
+} /* End of media queries */
 
 
 
+
+@keyframes spinnerOut {
+  0% {transform: rotate(0deg); transform: scale(1);}
+  20%{transform: scale(1.4); }
+  60% {transform: rotate(60deg);  opacity: (1);}
+  100% { opacity: (0); transform: rotate(60deg); transform: scale(1.4);}
+}
+
+@keyframes revealremove {
+  0% { opacity: 0  };
+  100% { opacity: 0.54 };
+}
 
 
 
