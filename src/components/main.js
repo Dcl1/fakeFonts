@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import '../output.css';
 import ListItem from './listItem.js';
-
+import ListContainer from '../containers/listItemContainer';
 
 import fontData from '../data/availableFont.json';
 import Sentences from '../data/sentences.json';
@@ -40,7 +40,7 @@ class Main extends Component {
 			var sent = Sentences.sentences[number].text;
 
 			return (
-				<ListItem
+				<ListContainer
 					fontTitle={e.title}
 					fontInfo={e.info}
 					sentence={sent}
