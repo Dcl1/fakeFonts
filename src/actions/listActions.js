@@ -1,7 +1,7 @@
 import * as types from './actionTypes';
 
 
-export function selectThisFont( F ){
+export function selectFont( F ){
 	return {
 		type: types.SELECTTHISFONT,
 		font: F

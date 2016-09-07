@@ -17,18 +17,28 @@ export default function appreducer( state = initialState, action = {}) {
 			}
 		case types.SELECTTHISFONT:
 
+			//console.log(state.selectFonts);
+
 			return {
 				...state,
 				selectFonts: [
-					...state.messages,
+					...state.selectFonts,
 					{
 						title: action.font
 					}
 				]
 			}
+		case types.CLEARFONTS:
+
+			return {
+				...state,
+				selectFonts: []
+			}
+
 
 		default:
 			return state;
 
 	}	
 }
+

@@ -1,3 +1,6 @@
+
+
+
 import React, { Component } from 'react';
 import '../output.css';
 
@@ -42,7 +45,9 @@ class Listitem extends Component {
 			toggled: newState
 		});
 
-		this.props.selectFont(this.props.fontTitle);
+		var Fonn = this.props.fontTitle;
+
+		this.props.selectFont(Fonn);
 
 
 	}

@@ -3,7 +3,9 @@ import React, { Component } from 'react';
 import HeaderBar from './components/headerBar.js';
 import Main from './components/main.js';
 import RightMenu from './components/rightMenu';
-import FontShelf from './components/fontShelf';
+
+import ShelfContainer from './containers/shelfContainer';
+
 import './App.css';
 import './output.css';
 
@@ -37,7 +39,7 @@ class App extends Component {
 
         </div>
 
-        <FontShelf />
+        <ShelfContainer />
 
 
       </div>

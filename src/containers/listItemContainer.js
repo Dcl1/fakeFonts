@@ -47,7 +47,9 @@ class ListItemContainer extends Component {
 export default connect(state => ({
 		state: state
 	}),
-	mapDispatchToProps
+	(dispatch) => ({
+		actions: bindActionCreators( ListActions, dispatch)
+	})
 )(ListItemContainer);
 
 

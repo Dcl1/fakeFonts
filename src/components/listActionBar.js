@@ -39,7 +39,7 @@ class ListActionBar extends Component {
 
 				<div className="actionBarSeg right">
 					<div className="actionBarItem"> 
-						<input type="range" name="pixels" min="0" max="50" onchange={this.showValue(this.value)} />
+						<input type="range" name="pixels" min="0" max="50"  />
 					</div>
 				</div>
 			</div>

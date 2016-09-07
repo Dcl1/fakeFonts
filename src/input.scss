@@ -61,9 +61,19 @@ li {
 
     .selectedFonts{
 
+        box-shadow: 1px 1px 5px #888888;
+
+        
+
+
+        li{
+          text-align: left;
+          margin: 16px;
+        }
+
         .selectedHeader{
             background-color: #222;
-            padding: 28px 16px 28px 16px;
+            padding: 28px 0px 28px 0px;
 
 
 
@@ -71,6 +81,8 @@ li {
               color: white;
               text-align: left;
               font-size: 12px;
+              margin-left: 16px;
+              margin-right: 16px;
             }
 
         }
@@ -605,6 +617,7 @@ li {
             margin: 0px 45 0px 45;
             width: calc(100%-90px);
             z-index: 2000;
+            padding-bottom: 24px;
           }
 
     }
@@ -634,9 +647,18 @@ li {
             background-color: white;
             position: fixed;
             bottom: 0;
-            transform: translateX(240px);
+            transform: translate(240px, 220px);
             z-index: 2000;
             width: 560px;
+            padding-bottom: 24px;
+          }
+          .isUp{
+              animation-name: bringUp2;
+              -webkit-animation-name: bringUp2;
+              animation-duration:1s;
+              -webkit-animation-duration: 1s;
+              animation-fill-mode: forwards;
+              -webkit-animation-fill-mode: forwards;
           }
 
     }
@@ -659,9 +681,19 @@ li {
             background-color: white;
             position: fixed;
             bottom: 0;
-            transform: translateX(800px);
+            transform: translate(800px, 220px);
             z-index: 2000;
             width: 560px;
+            padding-bottom: 24px;
+          }
+
+          .isUp{
+              animation-name: bringUp;
+              -webkit-animation-name: bringUp;
+              animation-duration:1s;
+              -webkit-animation-duration: 1s;
+              animation-fill-mode: forwards;
+              -webkit-animation-fill-mode: forwards;
           }
 
     }
@@ -689,7 +721,22 @@ li {
 }
 
 
+@keyframes bringUp {
+  0% {transform: translate(800px, 220px);}
+  100% {transform: translate(800px, 0px);}
+}
 
+
+@keyframes bringUp2 {
+  0% {transform: translate(240px, 220px);}
+  100% {transform: translate(240px, 0px);}
+}
+
+
+@keyframes bringUp2 {
+  0% {transform: translate(240px, 220px);}
+  100% {transform: translate(240px, 0px);}
+}
 
 
 @import 'https://fonts.googleapis.com/css?family=Crimson+Text';

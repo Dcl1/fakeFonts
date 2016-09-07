@@ -5,7 +5,7 @@ import App from '../App.js';
 
 const mapStateToProps = (state) => {
 
-	console.log(state);
+	//console.log(state);
 
 	return {
 		isOpen: state.app.headerState
