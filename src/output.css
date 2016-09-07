@@ -271,7 +271,9 @@ li {
   height: 100%; }
   .rightMenuContainer .filters h4 {
     float: left;
-    margin-bottom: 16px; }
+    color: rgba(0, 0, 0, 0.34);
+    margin-bottom: 16px;
+    font-size: 14px; }
   .rightMenuContainer .filters ul {
     margin: 0px;
     padding: 0px; }
@@ -288,6 +290,50 @@ li {
         vertical-align: top;
         margin: 0px 0px 0px 12px;
         padding-top: 3px; }
+      .rightMenuContainer .filters ul li input[type=range] {
+        -webkit-appearance: none;
+        /* Hides the slider so that custom slider can be made */
+        max-width: 100px;
+        /* Specific width is required for Firefox. */
+        background: transparent;
+        /* Otherwise white in Chrome */
+        align-self: stretch; }
+      .rightMenuContainer .filters ul li input[type=range]::-webkit-slider-runnable-track {
+        max-width: 100px;
+        height: 5px;
+        background: #ddd;
+        border: none;
+        border-radius: 3px; }
+      .rightMenuContainer .filters ul li input[type=range]::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        border: none;
+        height: 16px;
+        width: 16px;
+        border-radius: 50%;
+        background: #717AEF;
+        margin-top: -4px; }
+      .rightMenuContainer .filters ul li input[type=range]::-ms-thumb {
+        border: none;
+        height: 16px;
+        width: 16px;
+        border-radius: 50%;
+        background: goldenrod; }
+  .rightMenuContainer .sorting ul li {
+    margin-top: 11px;
+    margin-bottom: 22px; }
+    .rightMenuContainer .sorting ul li h4 {
+      font-size: 14px;
+      display: block;
+      float: left;
+      width: 100%;
+      text-align: left; }
+    .rightMenuContainer .sorting ul li div.rangeOption {
+      display: table; }
+      .rightMenuContainer .sorting ul li div.rangeOption .input {
+        display: table-cell;
+        vertical-align: middle; }
+      .rightMenuContainer .sorting ul li div.rangeOption .ranger {
+        margin-left: 12px; }
   .rightMenuContainer .main {
     padding: 20px 20px 0px 24px; }
   .rightMenuContainer .marg {
