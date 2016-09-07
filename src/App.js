@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import HeaderBar from './components/headerBar.js';
 import Main from './components/main.js';
 import RightMenu from './components/rightMenu';
+import FontShelf from './components/fontShelf';
 import './App.css';
 import './output.css';
 
@@ -12,7 +13,8 @@ class App extends Component {
   	super(props);
 
   	this.state={
-  		toggled: true
+  		toggled: true,
+      isUp: false
   	}
   }
 
@@ -30,6 +32,14 @@ class App extends Component {
         <div className={this.props.isOpen ? "secondaryOpen" : "secondaryClosed"}>  
         	<RightMenu />
         </div>
+
+        <div className={this.state.isUp ? "overlay" : "off"}>
+
+        </div>
+
+        <FontShelf />
+
+
       </div>
     );
   }

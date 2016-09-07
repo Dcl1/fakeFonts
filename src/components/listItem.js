@@ -41,6 +41,10 @@ class Listitem extends Component {
 		this.setState({
 			toggled: newState
 		});
+
+		this.props.selectFont(this.props.fontTitle);
+
+
 	}
 
 

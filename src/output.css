@@ -37,6 +37,23 @@ li {
 
 .App {
   text-align: center; }
+  .App .off {
+    display: none; }
+  .App .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 900;
+    background: linear-gradient(rgba(20, 20, 20, 0.5), rgba(20, 20, 20, 0.5)); }
+  .App .selectedFonts .selectedHeader {
+    background-color: #222;
+    padding: 28px 16px 28px 16px; }
+    .App .selectedFonts .selectedHeader h4 {
+      color: white;
+      text-align: left;
+      font-size: 12px; }
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
@@ -314,7 +331,7 @@ li {
         display: table-cell;
         vertical-align: middle; }
       .rightMenuContainer .sorting ul li div.rangeOption .ranger {
-        margin-left: 12px; }
+        padding-left: 12px; }
   .rightMenuContainer .main {
     padding: 20px 20px 0px 24px; }
   .rightMenuContainer .marg {
@@ -350,6 +367,14 @@ li {
   to {
     transform: rotate(360deg); } }
 @media screen and (max-width: 650px) {
+  .App .selectedFonts {
+    background-color: white;
+    position: fixed;
+    bottom: 0;
+    margin: 0px 45 0px 45;
+    width: calc(100%-90px);
+    z-index: 2000; }
+
   .listContainer {
     width: calc(100% - 41px); }
 
@@ -358,9 +383,25 @@ li {
   .App-header div.links {
     display: none; } }
 @media screen and (min-width: 650px) {
+  .App .selectedFonts {
+    background-color: white;
+    position: fixed;
+    bottom: 0;
+    transform: translateX(240px);
+    z-index: 2000;
+    width: 560px; }
+
   .listContainer {
     width: calc(50% - 41px); } }
 @media screen and (min-width: 1200px) {
+  .App .selectedFonts {
+    background-color: white;
+    position: fixed;
+    bottom: 0;
+    transform: translateX(800px);
+    z-index: 2000;
+    width: 560px; }
+
   .listContainer {
     width: calc(33% - 41px); } }
 /* End of media queries */
