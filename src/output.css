@@ -379,9 +379,17 @@ li {
     position: fixed;
     bottom: 0;
     margin: 0px 45 0px 45;
-    width: calc(100%-90px);
+    width: 100%;
     z-index: 2000;
-    padding-bottom: 24px; }
+    padding-bottom: 24px;
+    transform: translateY(300px); }
+  .App .isUp {
+    animation-name: bringUp3;
+    -webkit-animation-name: bringUp3;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards; }
 
   .listContainer {
     width: calc(100% - 41px); }
@@ -457,10 +465,10 @@ li {
     transform: translate(240px, 220px); }
   100% {
     transform: translate(240px, 0px); } }
-@keyframes bringUp2 {
+@keyframes bringUp3 {
   0% {
-    transform: translate(240px, 220px); }
+    transform: translateY(300px); }
   100% {
-    transform: translate(240px, 0px); } }
+    transform: translateY(0px); } }
 
 /*# sourceMappingURL=output.css.map */

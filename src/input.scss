@@ -615,10 +615,21 @@ li {
             position: fixed;
             bottom: 0;
             margin: 0px 45 0px 45;
-            width: calc(100%-90px);
+            width: 100%;
             z-index: 2000;
             padding-bottom: 24px;
+            transform: translateY(300px);
           }
+
+          .isUp{
+              animation-name: bringUp3;
+              -webkit-animation-name: bringUp3;
+              animation-duration:1s;
+              -webkit-animation-duration: 1s;
+              animation-fill-mode: forwards;
+              -webkit-animation-fill-mode: forwards;
+          }
+
 
     }
 
@@ -733,9 +744,9 @@ li {
 }
 
 
-@keyframes bringUp2 {
-  0% {transform: translate(240px, 220px);}
-  100% {transform: translate(240px, 0px);}
+@keyframes bringUp3 {
+  0% {transform: translateY(300px);}
+  100% {transform: translateY( 0px);}
 }
 
 
